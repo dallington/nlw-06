@@ -21,6 +21,18 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
-  ]
+    "src",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "baseUrl": "src",
+  "paths": {
+    "@/*": ["*"],
+    "@assets/*": [
+        "assets/*"
+    ],
+    "@component/*": [
+        "components/*"
+    ]
+  }
 }
